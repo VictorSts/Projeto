@@ -1,0 +1,29 @@
+﻿<Window x:Class="Projeto.Contato"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Projeto_Part_2.Views"
+        mc:Ignorable="d"
+        Title="Contato" Height="450" Width="344">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TransitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+
+                <Label Content="Nome Completo:" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16"/>
+                <TextBox x:Name="txtContatoNome" HorizontalAlignment="Left" Height="28" Margin="145,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Background="#FFBDB5B5" BorderBrush="#890A0A0A" CaretBrush="Black"/>
+
+                <Label Content="E-mail:" HorizontalAlignment="Left" Margin="73,119,0,0" VerticalAlignment="Top" Width="67" FontFamily="Arial" FontSize="16" RenderTransformOrigin="0.169,0.516"/>
+                <TextBox x:Name="txtContatoEmail" HorizontalAlignment="Left" Height="28" Margin="145,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Background="#FFBDB5B5" CaretBrush="Black"/>
+
+                <Label Content="Telefone:" HorizontalAlignment="Left" Margin="59,150,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" Width="85"/>
+                <TextBox x:Name="txtContatoTelefone" HorizontalAlignment="Left" Height="27" Margin="145,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Background="#FFBDB5B5" CaretBrush="Black"/>
+
+                <TextBox x:Name="txtContato" Text="Olá, tenho interesse no veículo. Por favor entre em contato." AcceptsReturn="True" TextWrapping="Wrap" Background="#FFBDB5B5" Margin="10,183,0,0" TextAlignment="Left" VerticalAlignment="Top" HorizontalAlignment="Left" Width="310"/>
+                <Button x:Name="btnContatoEnviar" Content="Enviar mensagem" HorizontalAlignment="Left" Margin="10,287,0,0" VerticalAlignment="Top" Width="310" Background="#FF3AB779" Click="btnContatoEnviar_Click"/>
+
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</Window>

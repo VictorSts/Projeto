@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Contato.xaml.cs">
+      <DependentUpon>Contato.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GolfLeiaMais.xaml.cs">
       <DependentUpon>GolfLeiaMais.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,10 @@
     <Compile Include="UserControlMoto.xaml.cs">
       <DependentUpon>UserControlMoto.xaml</DependentUpon>
     </Compile>
+    <Page Include="Contato.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GolfLeiaMais.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
