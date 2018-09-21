@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GolfLeiaMais.xaml.cs">
+      <DependentUpon>GolfLeiaMais.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControlAutomovel.xaml.cs">
       <DependentUpon>UserControlAutomovel.xaml</DependentUpon>
     </Compile>
@@ -69,6 +72,10 @@
     <Compile Include="UserControlMoto.xaml.cs">
       <DependentUpon>UserControlMoto.xaml</DependentUpon>
     </Compile>
+    <Page Include="GolfLeiaMais.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -132,6 +139,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Imagem\suzuki-gsxr-1000-r-2018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagem\Onix-2018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagem\ranger.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
