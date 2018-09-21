@@ -24,5 +24,23 @@ namespace Projeto
         {
             InitializeComponent();
         }
+
+        private void btnKawasaki_Click(object sender, RoutedEventArgs e)
+        {
+            Contatos janela = new Contatos();
+            janela.Show();
+        }
+
+        private void btnBMW_Click(object sender, RoutedEventArgs e)
+        {
+            Contatos janela = new Contatos();
+            janela.Show();
+        }
+
+        private void btnSuzuki_Click(object sender, RoutedEventArgs e)
+        {
+            Contatos janela = new Contatos();
+            janela.Show();
+        }
     }
 }

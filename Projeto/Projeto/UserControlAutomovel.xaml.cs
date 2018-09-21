@@ -24,5 +24,23 @@ namespace Projeto
         {
             InitializeComponent();
         }
+
+        private void btnGolf_Click(object sender, RoutedEventArgs e)
+        {
+            Contatos janela = new Contatos();
+            janela.Show();
+        }
+
+        private void btnRanger_Click(object sender, RoutedEventArgs e)
+        {
+            Contatos janela = new Contatos();
+            janela.Show();
+        }
+
+        private void btnOnix_Click(object sender, RoutedEventArgs e)
+        {
+            Contatos janela = new Contatos();
+            janela.Show();
+        }
     }
 }

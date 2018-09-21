@@ -24,5 +24,11 @@ namespace Projeto
         {
             InitializeComponent();
         }
+
+        private void LeiaMais_Click(object sender, RoutedEventArgs e)
+        {
+            GolfLeiaMais golf = new GolfLeiaMais();
+            golf.ShowDialog();
+        }
     }
 }

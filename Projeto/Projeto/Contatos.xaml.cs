@@ -17,9 +17,9 @@ namespace Projeto
     /// <summary>
     /// Lógica interna para Contato.xaml
     /// </summary>
-    public partial class Contato : Window
+    public partial class Contatos : Window
     {
-        public Contato()
+        public Contatos()
         {
             InitializeComponent();
         }

@@ -24,5 +24,45 @@ namespace Projeto
         {
             InitializeComponent();
         }
+
+        private void ButtonFechar_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void ListViewMenu_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            int index = ListViewMenu.SelectedIndex;
+            MoveCursorMenu(index);
+
+            switch (index)
+            {
+                case 0:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlInicio());
+
+                    break;
+                case 1:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlMoto());
+                    break;
+                case 2:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlAutomovel());
+                    break;
+                case 3:
+                    GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new UserControlClientes());
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void MoveCursorMenu(int index)
+        {
+            // TransitionigContentSlide.OnApplyTemplate();
+            GridCursor.Margin = new Thickness(0, (100 + (60 * index)), 0, 0);
+        }
     }
 }
