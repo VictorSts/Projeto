@@ -15,13 +15,44 @@ using System.Windows.Shapes;
 namespace Projeto
 {
     /// <summary>
-    /// Lógica interna para Contato.xaml
+    /// Lógica interna para Contatos.xaml
     /// </summary>
     public partial class Contatos : Window
     {
         public Contatos()
         {
             InitializeComponent();
+        }
+
+        private void btnContatoEnviar_Click(object sender, RoutedEventArgs e)
+        {     
+            Contato contact = new Contato();
+
+            contact.Nome = txtContatoNome.Text;
+            contact.Email = txtContatoEmail.Text;
+            contact.Telefone = txtContatoTelefone.Text;
+            contact.Mensagem = txtContato.Text;
+
+            using (AutomoveisEntities auto = new AutomoveisEntities())
+            {
+                auto.Contato.Add(contact);
+                auto.SaveChanges();
+            }
+            MessageBox.Show("Sucesso");
+            txtContatoNome.Clear();
+            txtContatoEmail.Clear();
+            txtContatoTelefone.Clear();
+
+            /*try
+            {
+                aut.Contato.Add(contact);
+                aut.SaveChanges();
+                MessageBox.Show("Sucesso");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Warning" );
+            }*/
         }
     }
 }

@@ -11,7 +11,7 @@
         <materialDesign:TransitioningContent x:Name="TransitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
             <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
                 <StackPanel>
-                    <TextBox Text="Golf GTI" FontFamily="Arial" FontSize="20"/>
+                    <TextBox Text="Golf GTI" FontFamily="Arial" FontSize="20" />
                     <StackPanel Margin="10">
                         <TextBlock Text=" À partir de R$110.000" FontSize="28" FontFamily="Arial"/>
                     </StackPanel>
