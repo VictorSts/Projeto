@@ -4,9 +4,72 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Projeto"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             Height="auto" Width="auto">
     <Grid>
-            
+        <materialDesign:TransitioningContent x:Name="TransitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Height="300">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" ShadowDepth="1"/>
+                    </Grid.Effect>
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Arial" FontSize="15" Text="Kawasaki ZX10R 2018"/>
+                        <Image Source="Imagem/2018-Kawasaki-Ninja-ZX-10R-ABS-KRT2.jpg" Width="200" Height="150"/>
+                        <TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" Height="52">
+                            Tipo de motor: 4 tempos, 4 cilindros,                          
+                            Potência máxima: 199cv a 13.500 RPM e
+                            Categoria: Super sport
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="R$80.020" VerticalAlignment="Center" Margin="20" FontSize="13"/>
+                            <Button x:Name="btnKawasaki" Width="109"  Content="Entre em Contato" Background="#FF3AB779" FontFamily="Arial" FontSize="9" Click="btnKawasaki_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" Height="300" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" ShadowDepth="1"/>
+                    </Grid.Effect>
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Arial" FontSize="15" Text="BMW S1000RR 2018"/>
+                        <Image Source="Imagem/bmw-s1000rr-2017.jpg" Width="200" Height="150" Stretch="Fill"/>
+                        <TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" Height="52">
+                            Tipo de motor: 4 tempos, 4 cilindros,                          
+                            Potência máxima: 199cv a 13.500 RPM e
+                            Categoria: Super sport
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="R$78.200" VerticalAlignment="Center" Margin="20" FontSize="13"/>
+                            <Button x:Name="btnBMW" Width="109"  Content="Entre em Contato" Background="#FF3AB779" FontFamily="Arial" FontSize="9" Click="btnBMW_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2" Height="300" Margin="10">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" ShadowDepth="1"/>
+                    </Grid.Effect>
+                    <StackPanel Width="200">
+                        <TextBlock Margin="10" FontFamily="Arial" FontSize="15" Text="Suzuki GSX-R 1000 2018"/>
+                        <Image Source="Imagem/suzuki-gsxr-1000-r-2018.jpg" Width="200" Height="150" Stretch="Fill"/>
+                        <TextBlock FontSize="10" Margin="5" TextWrapping="Wrap" Height="52">
+                            Tipo de motor: 4 tempos, 4 cilindros,                          
+                            Potência máxima: 185cv a 11.500 RPM e
+                            Categoria: Super sport
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="R$55.700" VerticalAlignment="Center" Margin="20" FontSize="13"/>
+                            <Button x:Name="btnSuzuki" Width="109"  Content="Entre em Contato" Background="#FF3AB779" FontFamily="Arial" FontSize="9" Click="btnSuzuki_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </materialDesign:TransitioningContent>
     </Grid>
 </UserControl>

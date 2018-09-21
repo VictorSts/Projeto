@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControlAutomovel.xaml.cs">
+      <DependentUpon>UserControlAutomovel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControlInicio.xaml.cs">
       <DependentUpon>UserControlInicio.xaml</DependentUpon>
     </Compile>
@@ -78,6 +81,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserControlAutomovel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControlInicio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,6 +123,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Imagem\VW-Golf-2018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagem\2018-Kawasaki-Ninja-ZX-10R-ABS-KRT2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagem\bmw-s1000rr-2017.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagem\suzuki-gsxr-1000-r-2018.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
