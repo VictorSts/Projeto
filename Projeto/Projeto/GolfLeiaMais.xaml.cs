@@ -10,15 +10,14 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Projeto
 {
     /// <summary>
-    /// Interação lógica para GolfLeiaMais.xam
+    /// Lógica interna para GolfLeiaMais.xaml
     /// </summary>
-    public partial class GolfLeiaMais : UserControl
+    public partial class GolfLeiaMais : Window
     {
         public GolfLeiaMais()
         {
